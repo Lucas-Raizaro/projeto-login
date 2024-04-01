@@ -23,15 +23,16 @@ main{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  
   background-color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   height: 500px;
   width: 250px;
 
   overflow: hidden;
   transition: width .2s, height .2s;
   transition-timing-function: ease;
+  transform: translate(-50%, -50%);
 }
 
 div#imagem{
@@ -48,3 +49,82 @@ div#login{
   padding: 10px;
   display: block;
 }
+
+div#login h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+  div#login p{
+    font-size: 0.8em;
+  }
+
+  .fundo{
+    background-color: #5E3083;
+    height: 40px;
+    width: 100%;
+    display: block;
+    margin: 5px 0px;
+    border-radius: 5px;
+    border: 1px solid #5E3083;
+  }
+
+  div.fundo > i{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px
+  }
+
+  div.fundo input {
+    background-color: #94CFCD;
+    padding: 5px;
+    height: 100%;
+    width: calc(100% - 45px);
+    
+    border-radius: 5px;transform: translateY(-13px);
+  }
+
+
+
+
+
+  form input[type=submit]{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #649d9b;
+    color: white;
+    font-size: 1em;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  form > input[type=submit]:hover{
+    background-color: #2D6462;
+  }
+
+  form > a.link{
+    text-align: center;
+    display: block;
+    width: 100%;
+    border: 1px solid #649d9b;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 5px;
+    color: #386361;
+    font-size: 1em;
+    margin-top: 5px;
+    text-decoration: none;
+  }
+
+  form > a.link:hover{
+    background-color: #6CD3CF;
+  }
+
+  form > a.link > i{
+    padding-top: 10px;
+    font-size: 0.8em;
+  }
