@@ -12,6 +12,8 @@ html, body{
   width: 100vw;
 }
 
+
+
 body{
   position: relative;
   background-color: #5F2C82;
@@ -28,6 +30,8 @@ main{
   width: 250px;
 
   overflow: hidden;
+  transition: width .2s, height .2s;
+  transition-timing-function: ease;
 }
 
 div#imagem{
@@ -35,10 +39,12 @@ div#imagem{
   background-image: url('../imagens/pexels-adrien-olichon-18378590.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: center center;
   height: 200px;
+  display: block;
 }
 
 div#login{
   padding: 10px;
+  display: block;
 }
